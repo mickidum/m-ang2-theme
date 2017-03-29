@@ -1,0 +1,12 @@
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+h1 {
+	text-align: center;
+}
+
+.header {
+	position: relative;
+	z-index: 100;
+}
+

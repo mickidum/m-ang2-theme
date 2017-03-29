@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div class="header">
+<md-toolbar color="accent">
+  <span><a routerLink="/">{{title}}</a></span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+
+  <span><app-main-menu></app-main-menu></span>
+</md-toolbar>
+
+</div>
+
+<router-outlet></router-outlet>

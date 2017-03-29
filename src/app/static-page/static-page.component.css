@@ -1,0 +1,29 @@
+h1 {
+	text-align: center;
+	font-size: 62px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.back {
+	text-align: center;
+	margin: 20px 0;
+
+}
+
+.back a {
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	border: solid 1px gray;
+	padding: 5px 20px;
+	transition: background .3s;
+}
+
+.back a:hover {
+	cursor: pointer;
+	background: gray;
+	text-decoration: none;
+	color: white;
+}

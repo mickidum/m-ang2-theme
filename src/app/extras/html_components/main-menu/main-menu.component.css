@@ -1,0 +1,16 @@
+md-nav-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.active {
+	background: rgba(0, 0, 0, 0.04);
+}

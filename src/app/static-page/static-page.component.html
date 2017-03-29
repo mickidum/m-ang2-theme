@@ -1,0 +1,10 @@
+<div *ngIf="page">
+	<div>
+  	<img *ngIf="page._embedded['wp:featuredmedia']" src="{{page._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}}" />
+  	<img *ngIf="!page._embedded['wp:featuredmedia']" src="./assets/images/placeholder-post.jpg" />
+  </div>
+  <h1>{{ page.title.rendered }}</h1>
+  
+  <div class="content" [innerHTML]="page.content.rendered"></div>
+  <div class="footer"></div>
+</div>

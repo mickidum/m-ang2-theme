@@ -1,1 +1,45 @@
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
 /* You can add global styles to this file, and also import other style files */
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+.container {
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.content {
+	max-width: 800px;
+	position: relative;
+	margin: 0 auto;
+	font-size: 24px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.footer {
+	margin-top: 40px;
+	position: relative;
+	height: 40px;
+	background: #777;
+	border-top: solid 5px #333;
+}
+
