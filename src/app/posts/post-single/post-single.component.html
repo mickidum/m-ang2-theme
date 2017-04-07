@@ -1,7 +1,7 @@
 <div *ngIf="post">
 	<div class="post-m animated fadeInDown">
   	<img *ngIf="post._embedded['wp:featuredmedia']" src="{{post._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}}" />
-  	<img *ngIf="!post._embedded['wp:featuredmedia']" src="assets/images/placeholder-post.jpg" />
+  	<img *ngIf="!post._embedded['wp:featuredmedia']" src="./wp-content/themes/m-ang2-theme/assets/images/placeholder-post.jpg" />
   </div>
   <div class="bottom animated fadeInUp">
   	<h1>{{ post.title.rendered }}</h1>
@@ -9,8 +9,7 @@
 	  <div class="back"><a (click) = "goBack()">BACK TO ALL POSTS</a></div>
 	  <div class="footer"></div>
   </div>
-  
-  
-  
-</div>
 
+
+
+</div>

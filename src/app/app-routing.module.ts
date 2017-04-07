@@ -13,7 +13,7 @@ const routes: Routes = [
     component: PostListComponent,
     pathMatch: 'full'
   },
- 
+
    {
     path: 'posts',
     component: PostListComponent,
@@ -24,12 +24,12 @@ const routes: Routes = [
     component: PostListComponent,
   },
 
-  { 
+  {
     path: 'contacts',
     component: ContactsComponent,
   },
 
-  { 
+  {
     path: 'page-not-found',
     component: NoContentComponent,
   },
@@ -38,20 +38,20 @@ const routes: Routes = [
     path: ':page',
     component: StaticPageComponent,
   },
-  
+
   {
   	path: 'posts/:slug',
   	component: PostSingleComponent,
   },
 
-  
 
-  { 
+
+  {
     path: '**',
     component: NoContentComponent,
   },
 
-  
+
 ];
 
 @NgModule({

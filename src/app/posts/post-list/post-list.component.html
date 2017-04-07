@@ -4,14 +4,14 @@
   <li *ngFor="let post of posts">
   <a class="link animated fadeIn" routerLink="/posts/{{post.slug | decodeUrl}}">
     <h2>{{ post.title.rendered }}</h2>
-   
+
   	<img *ngIf="post._embedded['wp:featuredmedia']" src="{{post._embedded['wp:featuredmedia'][0].media_details.sizes['thumbnail'].source_url}}" />
-  	<img *ngIf="!post._embedded['wp:featuredmedia']" src="./assets/images/placeholder.jpg" />
-  
+  	<img *ngIf="!post._embedded['wp:featuredmedia']" src="./wp-content/themes/m-ang2-theme/assets/images/placeholder.jpg" />
+
     <div *ngIf="post.excerpt">
       <p [innerHTML]="post.excerpt.rendered | excerpt"></p>
     </div>
-    
+
   </a>
   </li>
 </ul>
@@ -22,12 +22,12 @@
     <h2>{{ more_post.title.rendered }}</h2>
 
   	<img *ngIf="more_post._embedded['wp:featuredmedia']" src="{{more_post._embedded['wp:featuredmedia'][0].media_details.sizes['mini-gal'].source_url}}" />
-  	<img *ngIf="!more_post._embedded['wp:featuredmedia']" src="./assets/images/placeholder.jpg" />
+  	<img *ngIf="!more_post._embedded['wp:featuredmedia']" src="./wp-content/themes/m-ang2-theme/assets/images/placeholder.jpg" />
 
     <div *ngIf="more_post.excerpt">
       <p [innerHTML]="more_post.excerpt.rendered | excerpt"></p>
     </div>
-    
+
   </a>
 
   </li>
